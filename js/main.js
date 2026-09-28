@@ -122,6 +122,7 @@
       '<div class="header-logo"><a href="index.html"><img class="header-logo-img" src="assets/logo (3).webp" alt="Stackly"></a></div>'+
       '<nav class="header-nav">'+navHtml+'</nav>'+
       '<div class="header-actions">'+
+        '<a href="login.html" class="btn btn-accent btn-sm header-signin"><i class="fa-regular fa-user"></i><span>Sign In</span></a>'+
         '<button class="hamburger" id="hamburgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>'+
       '</div>'+
     '</div></header>'+
