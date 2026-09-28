@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact — Stackly</title>
+<meta name="description" content="Get in touch with the Stackly team for sales, support and partnerships.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+<div id="site-header"></div>
+<main>
+
+<!-- 1. HERO -->
+<section class="page-hero">
+  <div class="pattern-grid"></div>
+  <div class="blob-glow" style="width:420px;height:420px;background:#8B5CF6;top:-120px;right:-120px;"></div>
+  <div class="blob-glow" style="width:280px;height:280px;background:#FF3EA5;bottom:-80px;left:-60px;opacity:.4;"></div>
+  <div class="container page-hero-grid">
+    <div class="reveal-l in">
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Contact</span></div>
+      <span class="eyebrow reveal in"><i class="fa-solid fa-headset"></i> Contact Stackly</span>
+      <h1 class="reveal in">Let's talk about your procurement workflow.</h1>
+      <p class="lede reveal in">Sales, support or partnerships — reach the right team instantly and get a reply within one business day.</p>
+    </div>
+    <div class="reveal-r in">
+      <div class="page-hero-float">
+        <img class="page-hero-img" src="assets/contact.webp" alt="Stackly support team available for sales, support and partnership enquiries">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. CONTACT FORM + INFO -->
+<section class="section">
+  <div class="container grid-2">
+    <div class="reveal-l">
+      <span class="eyebrow"><i class="fa-solid fa-envelope"></i> Get in touch</span>
+      <h2>Drop us a message</h2>
+      <p>Tell us about your team and current process — a specialist will map the best path to Stackly.</p>
+      <form onsubmit="return false;" novalidate data-success="404.html" style="background:var(--surface);padding:32px;border-radius:var(--radius-l);">
+        <div class="field"><label for="contactName">Full name</label><div class="input-wrap"><input type="text" id="contactName" name="name" data-rule="name" required placeholder="Jane Doe" aria-describedby="contactNameError"></div><p class="form-error" id="contactNameError" role="alert" hidden></p></div>
+        <div class="field"><label for="contactEmail">Work email</label><div class="input-wrap"><input type="email" id="contactEmail" name="email" data-rule="gmail" required placeholder="jane@gmail.com" aria-describedby="contactEmailError"></div><p class="form-error" id="contactEmailError" role="alert" hidden></p></div>
+        <div class="field"><label>Subject</label><div class="input-wrap"><input type="text" placeholder="Sales, support, partnership..."></div></div>
+        <div class="field"><label>Message</label><div class="input-wrap"><textarea style="width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;font-size:14.5px;outline:none;font-family:inherit;resize:vertical;min-height:120px;" placeholder="How can we help?"></textarea></div></div>
+        <button class="btn btn-accent magnetic" style="width:100%;" type="submit"><span class="mag-inner">Send message <i class="fa-solid fa-paper-plane"></i></span></button>
+      </form>
+    </div>
+    <div class="reveal-r">
+      <span class="eyebrow"><i class="fa-solid fa-map-location-dot"></i> Find us</span>
+      <h2>Reach us directly</h2>
+      <p>Prefer email or a call? Here's where to point us.</p>
+      <div style="display:grid;gap:14px;margin-top:8px;">
+        <div class="spot-card" style="padding:24px;"><div class="spot-icon shape-blob" style="background:#EAE5FF;color:#5B3EE8;"><i class="fa-solid fa-location-dot"></i></div><h3 style="font-size:16px;">Head office</h3><p style="margin:0;">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</p></div>
+        <div class="spot-card" style="padding:24px;"><div class="spot-icon shape-blob" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-phone"></i></div><h3 style="font-size:16px;">Phone</h3><p style="margin:0;">+91 70107 92745</p></div>
+        <div class="spot-card" style="padding:24px;"><div class="spot-icon shape-blob" style="background:#FFEDF4;color:#FF3EA5;"><i class="fa-solid fa-envelope-circle-check"></i></div><h3 style="font-size:16px;">Email</h3><p style="margin:0;">hello@stackly.io</p></div>
+        <div class="spot-card" style="padding:24px;"><div class="spot-icon shape-blob" style="background:#FFF3E0;color:#FFB020;"><i class="fa-solid fa-clock"></i></div><h3 style="font-size:16px;">Business hours</h3><p style="margin:0;">Mon–Fri, 9:00–18:00 IST</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SUPPORT CHANNELS -->
+<section class="section tight tint-violet">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow"><i class="fa-solid fa-hand-holding-heart"></i> How we can help</span><h2>The right channel for every question.</h2></div>
+    <div class="grid-3">
+      <div class="spot-card reveal"><div class="spot-icon shape-hex" style="background:#EAE5FF;color:#5B3EE8;"><i class="fa-solid fa-display"></i></div><h3>Product demos</h3><p>See the platform live with a walkthrough tailored to your team's workflow and stage.</p></div>
+      <div class="spot-card reveal"><div class="spot-icon shape-hex" style="background:#EFF3FF;color:#3B5BFF;"><i class="fa-solid fa-circle-question"></i></div><h3>Help center</h3><p>Browse guides, templates and benchmarks in the <a href="resources.html" style="color:var(--primary);">resources library</a>.</p></div>
+      <div class="spot-card reveal"><div class="spot-icon shape-hex" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-rocket"></i></div><h3>Onboarding</h3><p>Most agency teams go live within two weeks — we handle migration and training.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. MAP -->
+<section class="section tight tint-blue">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow"><i class="fa-solid fa-map-location-dot"></i> Visit us</span><h2>Our head office in Salem.</h2></div>
+    <div class="grid-2">
+      <div class="map-frame reveal-l">
+        <iframe title="Map showing the Stackly head office location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616098770783!2d78.17140487505539!3d11.682956588526356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1790512176439!5m2!1sen!2sin" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="reveal-r">
+        <h3 style="margin-top:0;">Come and see us.</h3>
+        <p>We're in MMR Complex on Chinna Thirupathi Road, a few minutes from Salem Junction. Prefer a video walkthrough? Book a slot and we'll send an invite.</p>
+        <div class="map-meta">
+          <div class="map-meta-row"><div class="spot-icon shape-blob" style="background:#EAE5FF;color:#5B3EE8;"><i class="fa-solid fa-location-dot"></i></div><div><b>Head office</b><span>MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span></div></div>
+          <div class="map-meta-row"><div class="spot-icon shape-blob" style="background:#EFF3FF;color:#3B5BFF;"><i class="fa-solid fa-train-subway"></i></div><div><b>Getting here</b><span>Close to Salem Junction railway station</span></div></div>
+          <div class="map-meta-row"><div class="spot-icon shape-blob" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-clock"></i></div><div><b>Visitor hours</b><span>Mon–Fri, 9:00–18:00 IST</span></div></div>
+          <div class="map-meta-row"><div class="spot-icon shape-blob" style="background:#FFF3E0;color:#FFB020;"><i class="fa-solid fa-envelope"></i></div><div><b>Email</b><span>hello@stackly.io</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div class="pattern-circuit"></div>
+      <div style="max-width:560px;position:relative;z-index:1;">
+        <h2>Prefer a call? Talk to a procurement specialist.</h2>
+        <p>We'll map your current workflow and show what moves to Stackly in week one.</p>
+        <a href="404.html" class="btn btn-primary magnetic js-404" style="background:linear-gradient(120deg,#FF7A00,#FF3EA5);"><span class="mag-inner">Book a walkthrough <i class="fa-solid fa-calendar-check"></i></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

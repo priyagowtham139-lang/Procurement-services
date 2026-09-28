@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Compliance &amp; Risk — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-admin-compliance" data-dash="admin">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">Compliance &amp; risk</h2>
+        <p style="margin:0;font-size:13.5px;">Policy exceptions, expiring certificates and open findings.</p>
+      </div>
+      <a href="404.html" class="btn btn-accent magnetic js-404"><span class="mag-inner"><i class="fa-solid fa-shield-halved"></i> Run audit</span></a>
+    </div>
+
+    <div class="dash-cards">
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Adherence rate</span><div class="ic" style="background:#E7EBFF;color:#3B5BFF;"><i class="fa-solid fa-shield-halved"></i></div></div><b>96.4%</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Open findings</span><div class="ic" style="background:#FFEAEA;color:#FF4D4D;"><i class="fa-solid fa-circle-exclamation"></i></div></div><b data-count="5">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Expiring certificates</span><div class="ic" style="background:#FFF3E2;color:#FF9F1C;"><i class="fa-regular fa-file-lines"></i></div></div><b data-count="8">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Audits passed</span><div class="ic" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-circle-check"></i></div></div><b data-count="19">0</b></div>
+    </div>
+
+    <div class="dash-panel reveal">
+      <div class="ph"><div><h3>Findings register</h3><p>Four items requiring a compliance decision this week</p></div></div>
+      <div style="overflow-x:auto;">
+      <table class="dtable">
+        <thead><tr><th>Reference</th><th>Finding</th><th>Owner</th><th>Due</th><th>Severity</th></tr></thead>
+        <tbody>
+          <tr><td>CMP-0412</td><td>Single-source justification missing</td><td>Tom Lawrence</td><td>2026-10-02</td><td><span class="status late">High</span></td></tr>
+          <tr><td>CMP-0409</td><td>Vendor insurance certificate expired</td><td>Priya Nair</td><td>2026-10-08</td><td><span class="status late">High</span></td></tr>
+          <tr><td>CMP-0404</td><td>Split order above approval threshold</td><td>Jordan Blake</td><td>2026-10-15</td><td><span class="status review">Medium</span></td></tr>
+          <tr><td>CMP-0398</td><td>Conflict of interest declaration due</td><td>Riya Menon</td><td>2026-10-22</td><td><span class="status pending">Low</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

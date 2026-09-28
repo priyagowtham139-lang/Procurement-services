@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spend Analytics — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-admin-analytics" data-dash="admin">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">Spend analytics</h2>
+        <p style="margin:0;font-size:13.5px;">Where the money went this year, and what you saved.</p>
+      </div>
+      <a href="404.html" class="btn btn-outline magnetic js-404"><span class="mag-inner"><i class="fa-solid fa-download"></i> Export report</span></a>
+    </div>
+
+    <div class="dash-cards">
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Total spend YTD</span><div class="ic" style="background:#E7EBFF;color:#3B5BFF;"><i class="fa-solid fa-coins"></i></div></div><b>$18.4M</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Savings captured</span><div class="ic" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-piggy-bank"></i></div></div><b>$1.94M</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Competitive coverage</span><div class="ic" style="background:#F1ECFF;color:#8B5CF6;"><i class="fa-solid fa-chart-simple"></i></div></div><b>81%</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Avg. cycle time</span><div class="ic" style="background:#FFF3E2;color:#FF9F1C;"><i class="fa-regular fa-calendar-check"></i></div></div><b>12 days</b></div>
+    </div>
+
+    <div class="dash-panel reveal">
+      <div class="ph"><div><h3>Spend by category</h3><p>Year-to-date, ranked by total committed</p></div></div>
+      <div style="overflow-x:auto;">
+      <table class="dtable">
+        <thead><tr><th>Category</th><th class="num">YTD spend</th><th class="num">Share</th><th>Trend</th><th class="num">Requests</th></tr></thead>
+        <tbody>
+          <tr><td>Infrastructure &amp; sensors</td><td class="num">$6,240,000</td><td class="num">33.9%</td><td><span class="status review">Up 8%</span></td><td class="num">61</td></tr>
+          <tr><td>Fleet &amp; vehicles</td><td class="num">$4,130,000</td><td class="num">22.4%</td><td><span class="status ok">Down 3%</span></td><td class="num">44</td></tr>
+          <tr><td>Water &amp; utilities</td><td class="num">$3,480,000</td><td class="num">18.9%</td><td><span class="status ok">Flat</span></td><td class="num">28</td></tr>
+          <tr><td>Professional services</td><td class="num">$2,210,000</td><td class="num">12.0%</td><td><span class="status review">Up 14%</span></td><td class="num">36</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

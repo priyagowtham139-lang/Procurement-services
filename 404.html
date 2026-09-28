@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Page Not Found — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="404">
+<div id="site-header"></div>
+
+<section class="notfound">
+  <div class="pattern-grid"></div>
+  <div class="blob-glow" style="width:400px;height:400px;background:#2C4CF0;top:20%;left:-100px;"></div>
+  <div style="position:relative;z-index:1;">
+    <p class="code">404</p>
+    <span class="eyebrow"><i class="fa-solid fa-signal"></i> Page not found</span>
+    <h2>This link took a wrong turn.</h2>
+    <p style="max-width:440px;margin:0 auto 30px;">The page you're looking for doesn't exist or has moved. Head back to exactly where you were.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <button id="goBackBtn" class="btn btn-accent magnetic"><span class="mag-inner"><i class="fa-solid fa-rotate-left"></i> Go back</span></button>
+      <a href="index.html" class="btn btn-outline magnetic"><i class="fa-solid fa-house"></i> Return home</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Organization Settings — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-admin-settings" data-dash="admin">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">Organization settings</h2>
+        <p style="margin:0;font-size:13.5px;">Configure your workspace, approval routing and thresholds.</p>
+      </div>
+      <a href="dashboard-admin.html" class="btn btn-outline magnetic"><span class="mag-inner"><i class="fa-solid fa-arrow-left"></i> Back to console</span></a>
+    </div>
+
+    <form class="dash-panel reveal" novalidate data-success="404.html">
+      <div class="ph"><div><h3>Workspace configuration</h3><p>These values apply to every user in your organization</p></div></div>
+
+      <div class="field">
+        <label for="orgName">Organization name <span class="dreq">*</span></label>
+        <div class="input-wrap"><input type="text" id="orgName" name="orgName" required placeholder="City of Northport"></div>
+      </div>
+
+      <div class="field">
+        <label for="orgDomain">Approved email domain</label>
+        <div class="input-wrap"><input type="text" id="orgDomain" name="orgDomain" required placeholder="northport.gov"></div>
+        <span class="hint">Only these domains can be invited to the workspace.</span>
+      </div>
+
+      <div class="field">
+        <label for="orgThreshold">Tender threshold</label>
+        <div class="input-wrap"><input type="text" id="orgThreshold" name="orgThreshold" required placeholder="50000" inputmode="decimal"></div>
+        <span class="hint">Spend above this amount requires a competitive tender.</span>
+      </div>
+
+      <div class="field">
+        <label for="orgCurrency">Reporting currency</label>
+        <select id="orgCurrency" name="orgCurrency">
+          <option>USD — US Dollar</option>
+          <option>EUR — Euro</option>
+          <option>GBP — Pound Sterling</option>
+          <option>INR — Indian Rupee</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="orgCycle">Default approval cycle</label>
+        <select id="orgCycle" name="orgCycle">
+          <option>Standard — 21 working days</option>
+          <option>Expedited — 10 working days</option>
+          <option>Critical — 5 working days</option>
+        </select>
+      </div>
+
+      <div class="field-actions">
+        <button type="submit" class="btn btn-accent magnetic"><span class="mag-inner"><i class="fa-solid fa-check"></i> Save configuration</span></button>
+        <button type="reset" class="btn btn-outline">Cancel</button>
+      </div>
+    </form>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
