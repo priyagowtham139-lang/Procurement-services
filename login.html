@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign In — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<section class="auth-wrap">
+  <div class="auth-visual">
+    <div class="pattern-grid" style="opacity:.18;"></div>
+    <div class="blob-glow" style="width:340px;height:340px;background:#2C4CF0;top:-80px;right:-60px;"></div>
+    <div class="blob-glow" style="width:260px;height:260px;background:#00C2A8;bottom:-60px;left:-60px;"></div>
+    <div class="content">
+      <span class="eyebrow" style="background:rgba(255,255,255,.1);color:#fff;"><i class="fa-solid fa-shield-halved"></i> Secure access</span>
+      <h2>One login, every procurement view.</h2>
+      <p>Sign in as a buyer to manage requests and contracts, or as an admin to oversee your organisation's entire procurement operation.</p>
+      <div style="display:flex;gap:14px;margin-top:30px;">
+        <div class="pcard" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);"><div class="pcard-ico" style="background:rgba(255,255,255,.12);color:#fff;"><i class="fa-solid fa-lock"></i></div><div><h4 style="color:#fff;">256-bit encryption</h4><p style="color:#b9c3e2;">Every session protected end to end.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="auth-form-side">
+    <div class="auth-inner">
+      <div class="auth-topbar">
+        <a class="auth-logo" href="index.html"><img src="assets/logo (3).webp" alt="Stackly home"></a>
+        <a class="auth-back" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to home</a>
+      </div>
+
+      <div class="auth-box">
+      <div class="auth-switch">
+        <button class="active" data-switch="signin">Sign in</button>
+        <button data-switch="signup">Create account</button>
+      </div>
+
+      <!-- SIGN IN -->
+      <div class="auth-panel active" data-auth="signin">
+        <div class="role-tabs">
+          <button class="active" data-role="user"><i class="fa-regular fa-user"></i> Buyer</button>
+          <button data-role="admin"><i class="fa-solid fa-user-shield"></i> Admin</button>
+        </div>
+        <form id="loginForm" data-role="user" novalidate>
+          <div class="field"><label for="loginEmail">Email address</label><div class="input-wrap"><input type="email" id="loginEmail" name="email" data-rule="gmail" required placeholder="you@gmail.com" aria-describedby="loginEmailError"></div><p class="form-error" id="loginEmailError" role="alert" hidden></p></div>
+          <div class="field pw"><label for="loginPassword">Password</label><div class="input-wrap">
+            <input type="password" id="loginPassword" name="password" data-rule="pwd" required placeholder="Enter your password" autocomplete="current-password" aria-describedby="loginPasswordError">
+            <button type="button" class="pw-toggle" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+          </div><p class="form-error" id="loginPasswordError" role="alert" hidden></p></div>
+          <div class="form-row"><label style="display:flex;gap:8px;align-items:center;"><input type="checkbox" style="width:auto;"> Remember me</label><a href="404.html" class="js-404" style="color:var(--primary);font-weight:600;">Forgot password?</a></div>
+          <button type="submit" class="btn btn-accent magnetic" style="width:100%;"><span class="mag-inner">Sign in <i class="fa-solid fa-arrow-right-long"></i></span></button>
+        </form>
+        <div class="auth-divider">or continue with</div>
+        <div style="display:flex;gap:12px;">
+          <button type="button" class="btn btn-outline js-404" style="flex:1;" aria-label="Continue with Google"><i class="fa-brands fa-google"></i></button>
+          <button type="button" class="btn btn-outline js-404" style="flex:1;" aria-label="Continue with Microsoft"><i class="fa-brands fa-microsoft"></i></button>
+        </div>
+      </div>
+
+      <!-- SIGN UP -->
+      <div class="auth-panel" data-auth="signup">
+        <form id="signupForm" novalidate data-success="404.html">
+          <div class="field"><label for="signupName">Full name</label><div class="input-wrap"><input type="text" id="signupName" name="name" data-rule="name" required placeholder="Jordan Blake" aria-describedby="signupNameError"></div><p class="form-error" id="signupNameError" role="alert" hidden></p></div>
+          <div class="field"><label for="signupEmail">Work email</label><div class="input-wrap"><input type="email" id="signupEmail" name="email" data-rule="gmail" required placeholder="you@gmail.com" aria-describedby="signupEmailError"></div><p class="form-error" id="signupEmailError" role="alert" hidden></p></div>
+          <div class="field pw"><label for="signupPassword">Create password</label><div class="input-wrap">
+            <input type="password" id="signupPassword" name="password" data-rule="strong" data-strength required placeholder="At least 8 characters" autocomplete="new-password" aria-describedby="signupPasswordError">
+            <button type="button" class="pw-toggle" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+          </div><div class="pw-strength" data-meter="signupPassword"><div class="track"><i></i><i></i><i></i><i></i></div><span class="label"></span></div><p class="form-error" id="signupPasswordError" role="alert" hidden></p></div>
+          <div class="field pw"><label for="signupConfirm">Confirm password</label><div class="input-wrap">
+            <input type="password" id="signupConfirm" name="confirm" data-rule="strong" data-match="signupPassword" required placeholder="Re-enter password" autocomplete="new-password" aria-describedby="signupConfirmError">
+            <button type="button" class="pw-toggle" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+          </div><p class="form-error" id="signupConfirmError" role="alert" hidden></p></div>
+          <div class="field form-row"><label for="signupTerms" style="display:flex;gap:8px;align-items:center;cursor:pointer;"><input type="checkbox" id="signupTerms" name="terms" data-rule="terms" required style="width:auto;" aria-describedby="signupTermsError"> I agree to the Terms &amp; Privacy Policy</label><p class="form-error" id="signupTermsError" role="alert" hidden></p></div>
+          <button type="submit" class="btn btn-accent magnetic" style="width:100%;"><span class="mag-inner">Create account <i class="fa-solid fa-user-plus"></i></span></button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>

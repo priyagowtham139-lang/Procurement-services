@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Request — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-new-request" data-dash="user">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">New request</h2>
+        <p style="margin:0;font-size:13.5px;">Raise a requisition and route it through the right approvals.</p>
+      </div>
+      <a href="dash-contracts.html" class="btn btn-outline magnetic"><span class="mag-inner"><i class="fa-solid fa-list-check"></i> My requests</span></a>
+    </div>
+
+    <form class="dash-panel reveal" novalidate data-success="404.html">
+      <div class="ph"><div><h3>Requisition details</h3><p>Reference REQ-2026-0347 is reserved for this draft</p></div><span class="status pending">Draft</span></div>
+
+      <div class="field">
+        <label for="reqTitle">Request title <span class="dreq">*</span></label>
+        <div class="input-wrap"><input type="text" id="reqTitle" name="title" required placeholder="e.g. Road sensor network — phase 2 hardware"></div>
+      </div>
+
+      <div class="field">
+        <label for="reqType">Request type <span class="dreq">*</span></label>
+        <select id="reqType" name="type" required>
+          <option value="">Select a type</option>
+          <option>Goods</option>
+          <option>Services</option>
+          <option>Consulting</option>
+          <option>Capital project</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="reqCategory">Category <span class="dreq">*</span></label>
+        <select id="reqCategory" name="category" required>
+          <option value="">Select a category</option>
+          <option>Infrastructure &amp; sensors</option>
+          <option>Fleet &amp; vehicles</option>
+          <option>IT hardware</option>
+          <option>Professional services</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="reqEmail">Notification email <span class="dreq">*</span></label>
+        <div class="input-wrap"><input type="email" id="reqEmail" name="email" data-rule="gmail" required placeholder="you@gmail.com"></div>
+        <p class="form-error" role="alert" hidden></p>
+      </div>
+
+      <div class="field">
+        <label for="reqNeeded">Needed by <span class="dreq">*</span></label>
+        <div class="input-wrap"><input type="date" id="reqNeeded" name="needed" required></div>
+        <span class="hint">Standard lead time is 21 working days.</span>
+      </div>
+
+      <div class="field">
+        <label for="reqValue">Estimated value <span class="dreq">*</span></label>
+        <div class="input-wrap"><input type="text" id="reqValue" name="value" required placeholder="0.00" inputmode="decimal"></div>
+        <span class="hint">Above $50,000 requires a competitive tender.</span>
+      </div>
+
+      <div class="field">
+        <label for="reqDesc">Scope of work <span class="dreq">*</span></label>
+        <textarea id="reqDesc" name="description" required placeholder="Describe deliverables, quantities and acceptance criteria."></textarea>
+      </div>
+
+      <div class="field-actions">
+        <button type="submit" class="btn btn-accent magnetic"><span class="mag-inner"><i class="fa-solid fa-paper-plane"></i> Submit for approval</span></button>
+        <button type="reset" class="btn btn-outline"><i class="fa-regular fa-floppy-disk"></i> Save as draft</button>
+      </div>
+    </form>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Orders — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-orders" data-dash="user">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">Orders</h2>
+        <p style="margin:0;font-size:13.5px;">Track purchase orders from approval through to delivery.</p>
+      </div>
+      <a href="404.html" class="btn btn-accent magnetic js-404"><span class="mag-inner"><i class="fa-solid fa-cart-plus"></i> Raise order</span></a>
+    </div>
+
+    <div class="dash-cards">
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Open orders</span><div class="ic" style="background:#E7EBFF;color:#3B5BFF;"><i class="fa-solid fa-box"></i></div></div><b data-count="19">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Committed value</span><div class="ic" style="background:#FFEDF4;color:#FF3EA5;"><i class="fa-solid fa-coins"></i></div></div><b>$482K</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">In transit</span><div class="ic" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-truck-fast"></i></div></div><b data-count="6">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Late</span><div class="ic" style="background:#FFEAEA;color:#FF4D4D;"><i class="fa-solid fa-triangle-exclamation"></i></div></div><b data-count="1">0</b></div>
+    </div>
+
+    <div class="dash-panel reveal">
+      <div class="ph"><div><h3>Order tracker</h3><p>Most recent purchase orders and their delivery state</p></div></div>
+      <div style="overflow-x:auto;">
+      <table class="dtable">
+        <thead><tr><th>PO number</th><th>Supplier</th><th class="num">Amount</th><th>Expected</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>PO-8834</td><td>Apex Industrial Supply</td><td class="num">$38,500</td><td>2026-10-18</td><td><span class="status review">In review</span></td></tr>
+          <tr><td>PO-8811</td><td>Veridian IT Services</td><td class="num">$12,900</td><td>2026-10-12</td><td><span class="status ok">In transit</span></td></tr>
+          <tr><td>PO-8760</td><td>Northwind Logistics</td><td class="num">$74,200</td><td>2026-10-30</td><td><span class="status ok">Confirmed</span></td></tr>
+          <tr><td>PO-8722</td><td>Halcyon Components</td><td class="num">$9,410</td><td>2026-09-20</td><td><span class="status late">Late</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

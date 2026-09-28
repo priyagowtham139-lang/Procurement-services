@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stackly — Smart Procurement Platform</title>
+<meta name="description" content="Stackly is a smart procurement platform for transparent sourcing, supplier management and contract control.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div id="site-header"></div>
+
+<main>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="pattern-grid"></div>
+  <div class="blob-glow" style="width:480px;height:480px;background:#2C4CF0;top:-160px;right:-120px;"></div>
+  <div class="blob-glow" style="width:320px;height:320px;background:#00C2A8;bottom:-100px;left:-80px;"></div>
+  <div class="container hero-grid">
+    <div class="reveal-l in">
+      <span class="eyebrow"><i class="fa-solid fa-circle-nodes"></i> Public &amp; enterprise procurement, unified</span>
+      <h1>Sourcing and contracts, run like a <span class="hl-underline in">smart city<svg viewBox="0 0 200 10" preserveAspectRatio="none"><path d="M2 8 C 50 2, 150 2, 198 8"/></svg></span> runs its grid.</h1>
+      <p class="lede">Stackly connects requisition, vendor discovery, bidding and contract lifecycle into one transparent workspace — built for teams that answer to the public.</p>
+      <div class="hero-cta-row">
+        <a href="404.html" class="btn btn-accent magnetic js-404"><span class="mag-inner">Start free trial <i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
+        <a href="404.html" class="btn btn-outline magnetic js-404"><span class="mag-inner"><i class="fa-solid fa-play"></i> Watch how it works</span></a>
+      </div>
+      <div class="hero-stats">
+        <div><b data-count="3200" data-dec="0">0</b><span>Agencies onboarded</span></div>
+        <div><b data-count="18.4" data-dec="1">0</b><span>Billion processed ($)</span></div>
+        <div><b data-count="99.9" data-dec="1">0</b><span>Platform uptime (%)</span></div>
+      </div>
+    </div>
+    <div class="reveal-r in">
+      <svg class="hero-art" viewBox="0 0 560 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Procurement hero illustration">
+        <defs>
+          <linearGradient id="artRing" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4F46E5"/><stop offset="55%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#FF3EA5"/>
+          </linearGradient>
+          <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <clipPath id="heroClip"><rect x="74" y="62" width="412" height="396" rx="26"/></clipPath>
+        </defs>
+
+        <!-- floating background blobs -->
+        <circle cx="70" cy="64" r="56" fill="#8B5CF6" opacity=".28">
+          <animate attributeName="cy" values="64;82;64" dur="5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="506" cy="452" r="72" fill="#00C2A8" opacity=".25">
+          <animate attributeName="cy" values="452;434;452" dur="6s" repeatCount="indefinite"/>
+        </circle>
+
+        <!-- animated gradient halo behind the image -->
+        <g filter="url(#softGlow)">
+          <animateTransform attributeName="transform" type="rotate" values="0 280 260;360 280 260" dur="60s" repeatCount="indefinite"/>
+          <circle cx="280" cy="260" r="212" fill="url(#artRing)" opacity=".55"/>
+        </g>
+
+        <!-- framed hero image -->
+        <g>
+          <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="5s" repeatCount="indefinite"/>
+          <rect x="60" y="48" width="440" height="424" rx="32" fill="#fff" filter="url(#softGlow)"/>
+          <rect x="60" y="48" width="440" height="424" rx="32" fill="#fff"/>
+          <rect x="60" y="48" width="440" height="424" rx="32" fill="none" stroke="url(#artRing)" stroke-width="3"/>
+          <image href="assets/procurement_-_home_hero.webp" x="74" y="62" width="412" height="396" preserveAspectRatio="xMidYMid slice" clip-path="url(#heroClip)"/>
+        </g>
+
+        <!-- floating badge chip -->
+        <g filter="url(#softGlow)">
+          <animateTransform attributeName="transform" type="translate" values="0 0;0 -16;0 0" dur="4.2s" repeatCount="indefinite"/>
+          <rect x="70" y="414" width="168" height="58" rx="18" fill="#fff"/>
+          <circle cx="104" cy="443" r="16" fill="#E6FBF7"/>
+          <path d="M98 437 l4 6 10 -12" stroke="#00C2A8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="128" y="447" font-family="Inter, sans-serif" font-size="12.5" font-weight="600" fill="#25104F">Vendor verified</text>
+        </g>
+
+        <!-- floating contract doc -->
+        <g filter="url(#softGlow)">
+          <animateTransform attributeName="transform" type="translate" values="0 0;0 -14;0 0" dur="4.6s" repeatCount="indefinite"/>
+          <rect x="392" y="398" width="118" height="90" rx="14" fill="#fff"/>
+          <circle cx="418" cy="418" r="5" fill="#FF5A63"/>
+          <circle cx="436" cy="418" r="5" fill="#FFB020"/>
+          <circle cx="454" cy="418" r="5" fill="#00C2A8"/>
+          <rect x="404" y="434" width="52" height="8" rx="4" fill="#E2D6FA"/>
+          <rect x="404" y="450" width="84" height="8" rx="4" fill="#F0EBFF"/>
+          <rect x="404" y="466" width="66" height="8" rx="4" fill="#F0EBFF"/>
+        </g>
+
+        <!-- spinning seal -->
+        <g filter="url(#softGlow)">
+          <animateTransform attributeName="transform" type="rotate" values="0 512 470;360 512 470" dur="10s" repeatCount="indefinite"/>
+          <circle cx="512" cy="470" r="26" fill="#FFF3E0"/>
+          <path d="M512 454 a16 16 0 1 1 0 32 a16 16 0 1 1 0 -32" stroke="#FFB020" stroke-width="4" fill="none"/>
+          <circle cx="512" cy="470" r="7" fill="#FFB020"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 2. TRUSTED BY MARQUEE -->
+<section class="section tight trust-band" style="padding-top:36px;padding-bottom:36px;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);background:var(--grad-dusk);">
+  <div class="container">
+    <p style="text-align:center;font-size:13px;color:#cfd7ef;margin-bottom:26px;">Trusted by procurement teams across cities, utilities and enterprise</p>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="logo-chip"><i class="fa-solid fa-building-columns"></i> MetroCity Gov</span>
+      <span class="logo-chip"><i class="fa-solid fa-bolt"></i> GridWorks Energy</span>
+      <span class="logo-chip"><i class="fa-solid fa-water"></i> AquaMunicipal</span>
+      <span class="logo-chip"><i class="fa-solid fa-train-subway"></i> Transit Authority</span>
+      <span class="logo-chip"><i class="fa-solid fa-hospital"></i> CarePoint Health</span>
+      <span class="logo-chip"><i class="fa-solid fa-industry"></i> Fabrikon Industries</span>
+      <span class="logo-chip"><i class="fa-solid fa-building-columns"></i> MetroCity Gov</span>
+      <span class="logo-chip"><i class="fa-solid fa-bolt"></i> GridWorks Energy</span>
+      <span class="logo-chip"><i class="fa-solid fa-water"></i> AquaMunicipal</span>
+      <span class="logo-chip"><i class="fa-solid fa-train-subway"></i> Transit Authority</span>
+      <span class="logo-chip"><i class="fa-solid fa-hospital"></i> CarePoint Health</span>
+      <span class="logo-chip"><i class="fa-solid fa-industry"></i> Fabrikon Industries</span>
+    </div>
+  </div>
+</section>
+
+<!-- 3. CORE SERVICES -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-layer-group"></i> Core services</span>
+      <h2>One workspace for the entire source-to-contract journey.</h2>
+    </div>
+    <div class="grid-3 dark-bd">
+      <div class="spot-card reveal"><img class="spot-img" src="assets/requistion_and_sourcing (2).webp" alt="Requisition and sourcing"><h3>Requisition &amp; sourcing</h3><p>Digitise intake, route approvals and match requests to pre-vetted suppliers automatically.</p></div>
+      <div class="spot-card reveal"><img class="spot-img" src="assets/bidding (1).webp" alt="e-Tendering and bids"><h3>e-Tendering &amp; bids</h3><p>Publish RFx, score submissions objectively and keep every bid auditable end to end.</p></div>
+      <div class="spot-card reveal"><img class="spot-img" src="assets/contract.webp" alt="Contract lifecycle"><h3>Contract lifecycle</h3><p>Draft, negotiate and e-sign contracts with renewal alerts before anything lapses.</p></div>
+      <div class="spot-card reveal"><img class="spot-img" src="assets/Vendor_management.webp" alt="Vendor management"><h3>Vendor management</h3><p>Score supplier performance, track compliance documents and flag risk early.</p></div>
+      <div class="spot-card reveal"><img class="spot-img" src="assets/Spend_analytics.webp" alt="Spend analytics"><h3>Spend analytics</h3><p>See budget commitments and savings in real time across every department.</p></div>
+      <div class="spot-card reveal"><img class="spot-img" src="assets/Compliance___audit (1).webp" alt="Compliance and audit"><h3>Compliance &amp; audit</h3><p>Built-in policy checks keep every purchase aligned to procurement regulation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. HOW IT WORKS -->
+<section class="section tight process-band" style="background:url('assets/process__section (1).webp') center/cover no-repeat;">
+  <div class="container grid-2">
+    <div class="reveal-l">
+      <span class="eyebrow"><i class="fa-solid fa-route"></i> Process</span>
+      <h2>From request to renewal in four connected steps.</h2>
+      <p>Every step keeps a full audit trail — reviewers see exactly what changed, when, and why.</p>
+        <a href="404.html" class="btn btn-primary magnetic js-404"><span class="mag-inner">See the full workflow <i class="fa-solid fa-diagram-project"></i></span></a>
+    </div>
+    <div class="steps reveal-r">
+      <div class="step-row"><span class="step-num">01</span><div><h3>Raise a request</h3><p>Departments submit needs through guided forms with budget checks built in.</p></div></div>
+      <div class="step-row"><span class="step-num">02</span><div><h3>Source &amp; bid</h3><p>Qualified suppliers are matched and invited to bid through a transparent portal.</p></div></div>
+      <div class="step-row"><span class="step-num">03</span><div><h3>Award &amp; contract</h3><p>Compare scored proposals side by side, then generate a contract in one click.</p></div></div>
+      <div class="step-row"><span class="step-num">04</span><div><h3>Track &amp; renew</h3><p>Monitor delivery, spend and compliance, with renewal reminders ahead of time.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PLATFORM FEATURES (video) -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-display"></i> Inside the platform</span>
+      <h2>A live control room for every purchase in motion.</h2>
+    </div>
+    <div class="tabbar" data-group="feat" style="justify-content:center;">
+      <button class="active" data-tab="overview">Overview</button>
+      <button data-tab="bids">Live bidding</button>
+      <button data-tab="budget">Budget tracking</button>
+    </div>
+    <div class="video-frame tabpanel active" data-group="feat" data-panel="overview">
+      <video autoplay muted loop playsinline controls src="assets/overview (1).mp4"></video>
+    </div>
+    <div class="video-frame tabpanel" data-group="feat" data-panel="bids">
+      <video autoplay muted loop playsinline controls src="assets/live_bidding.mp4"></video>
+    </div>
+    <div class="video-frame tabpanel" data-group="feat" data-panel="budget">
+      <video autoplay muted loop playsinline controls src="assets/budget_tracking.mp4"></video>
+    </div>
+  </div>
+</section>
+
+<!-- 6. INDUSTRIES — horizontal moving cards -->
+<section class="section tight" style="background:var(--grad-dusk);">
+  <div class="container">
+    <div class="section-head reveal" style="color:#fff;">
+      <span class="eyebrow" style="background:rgba(255,255,255,.1);color:#fff;"><i class="fa-solid fa-city"></i> Industries</span>
+      <h2 style="color:#fff;">Built for every corner of civic and enterprise supply.</h2>
+    </div>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track" style="animation-duration:34s;">
+      <div class="pcard" style="width:270px;"><div class="pcard-ico" style="background:#E7EBFF;color:#3B5BFF;"><i class="fa-solid fa-landmark-dome"></i></div><div><h4>Government</h4><p>Transparent tenders and public spend visibility.</p></div></div>
+      <div class="pcard" style="width:270px;"><div class="pcard-ico" style="background:#F1ECFF;color:#8B5CF6;"><i class="fa-solid fa-bolt"></i></div><div><h4>Utilities &amp; energy</h4><p>Manage critical infrastructure vendor networks.</p></div></div>
+      <div class="pcard" style="width:270px;"><div class="pcard-ico" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-truck-medical"></i></div><div><h4>Healthcare</h4><p>Fast, compliant procurement for care supply chains.</p></div></div>
+      <div class="pcard" style="width:270px;"><div class="pcard-ico" style="background:#FFEDF4;color:#FF3EA5;"><i class="fa-solid fa-train-subway"></i></div><div><h4>Transit</h4><p>Coordinate fleet, parts and infrastructure sourcing.</p></div></div>
+      <div class="pcard" style="width:270px;"><div class="pcard-ico" style="background:#FFF3E0;color:#FFB020;"><i class="fa-solid fa-industry"></i></div><div><h4>Manufacturing</h4><p>Multi-tier supplier scoring at enterprise scale.</p></div></div>
+      <div class="pcard" style="width:270px;"><div class="pcard-ico" style="background:#FDEBEC;color:#FF5A63;"><i class="fa-solid fa-landmark-dome"></i></div><div><h4>Government</h4><p>Transparent tenders and public spend visibility.</p></div></div>
+      <div class="pcard" style="width:270px;"><div class="pcard-ico" style="background:#E7EBFF;color:#3B5BFF;"><i class="fa-solid fa-bolt"></i></div><div><h4>Utilities &amp; energy</h4><p>Manage critical infrastructure vendor networks.</p></div></div>
+      <div class="pcard" style="width:270px;"><div class="pcard-ico" style="background:#F1ECFF;color:#8B5CF6;"><i class="fa-solid fa-truck-medical"></i></div><div><h4>Healthcare</h4><p>Fast, compliant procurement for care supply chains.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. STATS -->
+<section class="section">
+  <div class="container">
+    <div class="stat-band reveal">
+      <div class="pattern-dots" style="opacity:.15;"></div>
+      <div class="stat"><b data-count="42000">0</b><span>Contracts managed</span></div>
+      <div class="stat"><b data-count="97">0</b><span>Avg. compliance score</span></div>
+      <div class="stat"><b data-count="6.2" data-dec="1">0</b><span>Days average cycle time</span></div>
+      <div class="stat"><b data-count="18">0</b><span>Countries active</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. TESTIMONIALS — vertical up/down -->
+<section class="section tight tint-violet">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><i class="fa-solid fa-quote-left"></i> Voices from the field</span>
+      <h2>Procurement leaders run on Stackly.</h2>
+    </div>
+    <div class="grid-2 testi-grid">
+      <div class="vscroll reveal-l">
+        <div class="vscroll-track">
+          <div class="tcard"><p>"We cut our average tender cycle from three weeks to five days without losing a single audit trail."</p><div class="who"><img class="av-photo" src="assets/lena.webp" alt="Riya Menon"><div><b>Riya Menon</b><span>Chief Procurement Officer, MetroCity</span></div></div></div>
+          <div class="tcard"><p>"Supplier scoring finally feels objective. Disputes over awards dropped almost to zero."</p><div class="who"><img class="av-photo" src="assets/assets/Arjun.webp" alt="David Kim"><div><b>David Kim</b><span>Sourcing Director, GridWorks</span></div></div></div>
+          <div class="tcard"><p>"Contract renewals used to slip past us. Now Stackly flags them 60 days out, every time."</p><div class="who"><img class="av-photo" src="assets/sophia_grant.webp" alt="Anita Suresh"><div><b>Anita Suresh</b><span>Legal Ops Lead, AquaMunicipal</span></div></div></div>
+          <div class="tcard"><p>"We cut our average tender cycle from three weeks to five days without losing a single audit trail."</p><div class="who"><img class="av-photo" src="assets/lena.webp" alt="Riya Menon"><div><b>Riya Menon</b><span>Chief Procurement Officer, MetroCity</span></div></div></div>
+          <div class="tcard"><p>"Supplier scoring finally feels objective. Disputes over awards dropped almost to zero."</p><div class="who"><img class="av-photo" src="assets/assets/Arjun.webp" alt="David Kim"><div><b>David Kim</b><span>Sourcing Director, GridWorks</span></div></div></div>
+        </div>
+      </div>
+      <div class="vscroll reveal-r">
+        <div class="vscroll-track up">
+          <div class="tcard"><p>"Spend visibility across 40 departments used to take our team a week to compile. Now it's live."</p><div class="who"><img class="av-photo" src="assets/kawai.webp" alt="Tom Lawrence"><div><b>Tom Lawrence</b><span>Finance Controller, Transit Authority</span></div></div></div>
+          <div class="tcard"><p>"Onboarding new vendors went from a paper nightmare to a same-day approval."</p><div class="who"><img class="av-photo" src="assets/Priya_nair.webp" alt="Priya Nair"><div><b>Priya Nair</b><span>Vendor Relations, CarePoint Health</span></div></div></div>
+          <div class="tcard"><p>"The dashboard is the first thing our council asks to see before every budget meeting."</p><div class="who"><img class="av-photo" src="assets/rajan - Copy.webp" alt="James Walker"><div><b>James Walker</b><span>City Administrator, MetroCity</span></div></div></div>
+          <div class="tcard"><p>"Spend visibility across 40 departments used to take our team a week to compile. Now it's live."</p><div class="who"><img class="av-photo" src="assets/kawai.webp" alt="Tom Lawrence"><div><b>Tom Lawrence</b><span>Finance Controller, Transit Authority</span></div></div></div>
+          <div class="tcard"><p>"Onboarding new vendors went from a paper nightmare to a same-day approval."</p><div class="who"><img class="av-photo" src="assets/Priya_nair.webp" alt="Priya Nair"><div><b>Priya Nair</b><span>Vendor Relations, CarePoint Health</span></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. RESOURCES PREVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-book-open"></i> Latest thinking</span>
+      <h2>Resources for modern procurement teams.</h2>
+    </div>
+    <div class="grid-3 dark-bd">
+      <a href="resources.html" class="spot-card reveal"><div class="spot-icon shape-blob" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-newspaper"></i></div><h3>The state of public procurement 2026</h3><p>Benchmark data from 400+ agencies on cycle time and savings.</p></a>
+      <a href="resources.html" class="spot-card reveal"><div class="spot-icon shape-blob" style="background:#FFEDF4;color:#FF3EA5;"><i class="fa-solid fa-file-lines"></i></div><h3>Writing an RFP suppliers actually respond to</h3><p>A practical template used across our government customers.</p></a>
+      <a href="resources.html" class="spot-card reveal"><div class="spot-icon shape-blob" style="background:#FFF3E0;color:#FFB020;"><i class="fa-solid fa-headset"></i></div><h3>Customer story: AquaMunicipal</h3><p>How a water utility cut contract disputes by 80%.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div class="pattern-circuit"></div>
+      <div style="max-width:560px;position:relative;z-index:1;">
+        <h2>Ready to run procurement like a smart city runs its grid?</h2>
+        <p>Join thousands of buyers and suppliers already trading transparently on Stackly.</p>
+        <form class="newsletter-form" onsubmit="return false;" novalidate>
+          <input type="email" name="email" placeholder="Work email address" aria-describedby="ctaEmailError" required>
+          <button class="btn btn-primary magnetic" style="background:linear-gradient(120deg,#FF7A00,#FF3EA5);" type="submit"><span class="mag-inner">Get started <i class="fa-solid fa-arrow-right-long"></i></span></button>
+          <p class="form-error" id="ctaEmailError" role="alert" hidden></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

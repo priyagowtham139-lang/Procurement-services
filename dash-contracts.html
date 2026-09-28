@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contracts — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-contracts" data-dash="user">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">Contracts</h2>
+        <p style="margin:0;font-size:13.5px;">Agreements you're responsible for, and where they're headed.</p>
+      </div>
+      <a href="404.html" class="btn btn-accent magnetic js-404"><span class="mag-inner"><i class="fa-solid fa-plus"></i> New contract</span></a>
+    </div>
+
+    <div class="dash-cards">
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Total value</span><div class="ic" style="background:#E7EBFF;color:#3B5BFF;"><i class="fa-solid fa-sack-dollar"></i></div></div><b>$6.2M</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Active</span><div class="ic" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-circle-check"></i></div></div><b data-count="8">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Expiring soon</span><div class="ic" style="background:#FFF3E2;color:#FF9F1C;"><i class="fa-regular fa-hourglass"></i></div></div><b data-count="2">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Pending signature</span><div class="ic" style="background:#F1ECFF;color:#8B5CF6;"><i class="fa-solid fa-signature"></i></div></div><b data-count="1">0</b></div>
+    </div>
+
+    <div class="dash-panel reveal">
+      <div class="ph"><div><h3>Contract register</h3><p>Your four most significant active agreements</p></div></div>
+      <div style="overflow-x:auto;">
+      <table class="dtable">
+        <thead><tr><th>Reference</th><th>Counterparty</th><th class="num">Value</th><th>Renews</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>CTR-1120</td><td>Clearwater Utilities</td><td class="num">$1,240,000</td><td>2026-11-30</td><td><span class="status pending">Pending sign</span></td></tr>
+          <tr><td>CTR-1088</td><td>Northwind Logistics</td><td class="num">$845,000</td><td>2027-02-14</td><td><span class="status ok">Active</span></td></tr>
+          <tr><td>CTR-1042</td><td>Apex Industrial Supply</td><td class="num">$312,400</td><td>2026-10-05</td><td><span class="status review">Renewal review</span></td></tr>
+          <tr><td>CTR-0997</td><td>Veridian IT Services</td><td class="num">$198,000</td><td>2027-06-22</td><td><span class="status ok">Active</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

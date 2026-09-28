@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Industries — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="industries">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+<div id="site-header"></div>
+<main>
+
+<!-- 1. HERO -->
+<section class="page-hero">
+  <div class="pattern-grid"></div>
+  <div class="blob-glow" style="width:400px;height:400px;background:#FFB020;top:-100px;right:-100px;opacity:.35;"></div>
+  <div class="container page-hero-grid">
+    <div class="reveal-l in">
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Industries</span></div>
+      <span class="eyebrow reveal in"><i class="fa-solid fa-city"></i> Industries served</span>
+      <h1 class="reveal in">Purpose-built workflows for civic and enterprise supply chains.</h1>
+      <p class="lede reveal in">Every sector procures differently — Stackly's rules, forms and scorecards adapt to the regulation and pace each industry actually runs on.</p>
+    </div>
+    <div class="reveal-r in">
+      <div class="page-hero-float">
+        <img class="page-hero-img" src="assets/supply_chain (7).webp" alt="Supply chain operations monitored through the Stackly procurement workspace">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. INDUSTRY CARDS (draggable horizontal) -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow"><i class="fa-solid fa-arrows-left-right"></i> Browse</span><h2>Drag to explore every industry we serve.</h2></div>
+    <div class="hscroll">
+      <div class="icard spot-card reveal"><img class="spot-img" src="assets/Government (4).webp" alt="Government procurement tender and transparency dashboard"><h3>Government</h3><p>Public tenders with full transparency and citizen-visible audit trails.</p></div>
+      <div class="icard spot-card reveal"><img class="spot-img" src="assets/Utilities___energy (1).webp" alt="Utilities and energy critical infrastructure sourcing workspace"><h3>Utilities &amp; energy</h3><p>Critical infrastructure sourcing with redundancy and risk scoring.</p></div>
+      <div class="icard spot-card reveal"><img class="spot-img" src="assets/health_care (1).webp" alt="Healthcare care supply chain procurement workspace"><h3>Healthcare</h3><p>Compliant, fast-moving procurement for care supply chains.</p></div>
+      <div class="icard spot-card reveal"><img class="spot-img" src="assets/Transit___infrastructure (1).webp" alt="Transit and infrastructure long-cycle contract workspace"><h3>Transit &amp; infrastructure</h3><p>Coordinate fleet, parts and long-cycle infrastructure contracts.</p></div>
+      <div class="icard spot-card reveal"><img class="spot-img" src="assets/manufacturing (8).webp" alt="Multi-tier manufacturing supply chain and raw material sourcing"><h3>Manufacturing</h3><p>Multi-tier supplier scoring and raw-material sourcing at scale.</p></div>
+      <div class="icard spot-card reveal"><img class="spot-img" src="assets/education (2).webp" alt="Education district and campus procurement workspace"><h3>Education</h3><p>Simplified sourcing for districts and campus procurement teams.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. INDUSTRY DEEP DIVE TABS -->
+<section class="section tight tint-blue">
+  <div class="container">
+    <div class="tabbar" data-group="ind">
+      <button class="active" data-tab="gov">Government</button>
+      <button data-tab="util">Utilities</button>
+      <button data-tab="health">Healthcare</button>
+    </div>
+    <div class="grid-2 tabpanel active" data-group="ind" data-panel="gov">
+      <div>
+        <h2>Government procurement, built for scrutiny.</h2>
+        <p>Every tender, score and award is logged and exportable — so public records requests and audits are answered in minutes, not weeks.</p>
+        <ul style="display:flex;flex-direction:column;gap:14px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--teal);margin-top:4px;"></i><span>Citizen-facing transparency portal</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--teal);margin-top:4px;"></i><span>Conflict-of-interest detection</span></li>
+        </ul>
+      </div>
+      <div class="video-frame"><video autoplay muted loop playsinline controls src="assets/government video.mp4"></video></div>
+    </div>
+    <div class="grid-2 tabpanel" data-group="ind" data-panel="util">
+      <div>
+        <h2>Utilities sourcing that holds up under load.</h2>
+        <p>Critical infrastructure cannot absorb a failed supplier — Stackly scores financial and operational redundancy before award, then holds delivery against the same SLAs for the life of the contract.</p>
+        <ul style="display:flex;flex-direction:column;gap:14px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--teal);margin-top:4px;"></i><span>Supplier redundancy and financial-risk scoring</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--teal);margin-top:4px;"></i><span>Framework agreements that absorb demand spikes</span></li>
+        </ul>
+      </div>
+      <div class="video-frame"><video autoplay muted loop playsinline controls src="assets/utilitiesand energy video.mp4"></video></div>
+    </div>
+    <div class="grid-2 tabpanel" data-group="ind" data-panel="health">
+      <div>
+        <h2>Healthcare procurement that keeps care moving.</h2>
+        <p>Care supply chains are fast-moving and tightly regulated — Stackly validates licences, expiry dates and cold-chain requirements at the point of award, not after delivery.</p>
+        <ul style="display:flex;flex-direction:column;gap:14px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--teal);margin-top:4px;"></i><span>Licence, expiry and cold-chain validation</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><i class="fa-solid fa-circle-check" style="color:var(--teal);margin-top:4px;"></i><span>Fast-track pathways for critical care supplies</span></li>
+        </ul>
+      </div>
+      <div class="video-frame"><video autoplay muted loop playsinline controls src="assets/healthcare video.mp4"></video></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. STATS -->
+<section class="section">
+  <div class="container">
+    <div class="stat-band reveal"><div class="pattern-dots" style="opacity:.15;"></div>
+      <div class="stat"><b data-count="24">0</b><span>Industry verticals</span></div>
+      <div class="stat"><b data-count="3200">0</b><span>Agencies onboarded</span></div>
+      <div class="stat"><b data-count="68">0</b><span>Avg. cycle-time cut (%)</span></div>
+      <div class="stat"><b data-count="18">0</b><span>Countries active</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. TESTIMONIALS -->
+<section class="section tight tint-pink">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow"><i class="fa-solid fa-quote-left"></i> Results</span><h2>Sector leaders, real outcomes.</h2></div>
+    <div class="vscroll reveal">
+      <div class="vscroll-track">
+        <div class="tcard"><p>"Our audit prep time dropped from six weeks to three days after switching to Stackly."</p><div class="who"><img class="av-photo" src="assets/rajan - Copy.webp" alt="James Walker"><div><b>James Walker</b><span>City Administrator</span></div></div></div>
+        <div class="tcard"><p>"Vendor risk scoring caught a compliance gap we'd have missed manually."</p><div class="who"><img class="av-photo" src="assets/Priya_nair.webp" alt="Priya Nair"><div><b>Priya Nair</b><span>Vendor Relations, CarePoint</span></div></div></div>
+        <div class="tcard"><p>"We finally have one number for total infrastructure spend, updated live."</p><div class="who"><img class="av-photo" src="assets/kawai.webp" alt="Tom Lawrence"><div><b>Tom Lawrence</b><span>Finance Controller, Transit</span></div></div></div>
+        <div class="tcard"><p>"Our audit prep time dropped from six weeks to three days after switching to Stackly."</p><div class="who"><img class="av-photo" src="assets/rajan - Copy.webp" alt="James Walker"><div><b>James Walker</b><span>City Administrator</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CTA -->
+<section class="section"><div class="container"><div class="cta-band reveal"><div class="pattern-circuit"></div>
+  <div style="position:relative;z-index:1;"><h2>Find the workflow built for your industry.</h2><p>We'll show you the exact configuration teams like yours run on.</p><button class="btn btn-primary magnetic" style="background:linear-gradient(120deg,#FF7A00,#FF3EA5);margin-top:10px;"><span class="mag-inner">Get a demo <i class="fa-solid fa-play"></i></span></button></div>
+</div></div></section>
+
+</main>
+<div id="site-footer"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

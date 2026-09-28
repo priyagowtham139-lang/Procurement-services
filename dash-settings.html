@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Account Settings — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-settings" data-dash="user">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">Account settings</h2>
+        <p style="margin:0;font-size:13.5px;">Update your profile and sign-in details.</p>
+      </div>
+      <a href="dashboard-user.html" class="btn btn-outline magnetic"><span class="mag-inner"><i class="fa-solid fa-arrow-left"></i> Back to overview</span></a>
+    </div>
+
+    <form class="dash-panel reveal" novalidate data-success="404.html">
+      <div class="ph"><div><h3>Your details</h3><p>Visible to approvers and to your own team</p></div></div>
+
+      <div class="field">
+        <label for="setFirst">First name <span class="dreq">*</span></label>
+        <div class="input-wrap"><input type="text" id="setFirst" name="firstName" required placeholder="Jordan"></div>
+      </div>
+
+      <div class="field">
+        <label for="setLast">Last name <span class="dreq">*</span></label>
+        <div class="input-wrap"><input type="text" id="setLast" name="lastName" required placeholder="Blake"></div>
+      </div>
+
+      <div class="field">
+        <label for="setEmail">Email address <span class="dreq">*</span></label>
+        <div class="input-wrap"><input type="email" id="setEmail" name="email" data-rule="gmail" required placeholder="you@gmail.com"></div>
+        <p class="form-error" role="alert" hidden></p>
+      </div>
+
+      <div class="field">
+        <label for="setDept">Department</label>
+        <select id="setDept" name="department">
+          <option>Public Works</option>
+          <option>Transport</option>
+          <option>Utilities</option>
+          <option>Finance</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="setPass">New password</label>
+        <div class="input-wrap"><input type="password" id="setPass" name="password" data-rule="strong" placeholder="At least 8 characters"></div>
+        <span class="hint">Use at least 8 characters with one number.</span>
+      </div>
+
+      <div class="field-actions">
+        <button type="submit" class="btn btn-accent magnetic"><span class="mag-inner"><i class="fa-solid fa-check"></i> Save changes</span></button>
+        <button type="reset" class="btn btn-outline">Cancel</button>
+      </div>
+    </form>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

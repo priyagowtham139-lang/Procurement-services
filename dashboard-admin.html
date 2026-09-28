@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Console — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-admin-overview" data-dash="admin">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">Admin console</h2>
+        <p style="margin:0;font-size:13.5px;">Organization-wide procurement health, at a glance.</p>
+      </div>
+      <a href="404.html" class="btn btn-accent magnetic js-404"><span class="mag-inner"><i class="fa-solid fa-user-plus"></i> Invite user</span></a>
+    </div>
+
+    <div class="dash-cards">
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Active users</span><div class="ic" style="background:#E7EBFF;color:#3B5BFF;"><i class="fa-solid fa-users"></i></div></div><b data-count="486">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Live tenders</span><div class="ic" style="background:#F1ECFF;color:#8B5CF6;"><i class="fa-solid fa-gavel"></i></div></div><b data-count="27">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Flagged for review</span><div class="ic" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-triangle-exclamation"></i></div></div><b data-count="5">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Total spend YTD</span><div class="ic" style="background:#FFEDF4;color:#FF3EA5;"><i class="fa-solid fa-coins"></i></div></div><b>$18.4M</b></div>
+    </div>
+
+    <div class="dash-panel reveal">
+      <div class="ph"><div><h3>Recent platform activity</h3><p>Latest actions taken by your team</p></div></div>
+      <div style="overflow-x:auto;">
+      <table class="dtable">
+        <thead><tr><th>User</th><th>Action</th><th>Reference</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Jordan Blake</td><td>Submitted requisition</td><td>PO-8834</td><td><span class="status review">In review</span></td></tr>
+          <tr><td>Priya Nair</td><td>Onboarded vendor</td><td>VND-0442</td><td><span class="status ok">Approved</span></td></tr>
+          <tr><td>Tom Lawrence</td><td>Flagged budget overage</td><td>CTR-1120</td><td><span class="status pending">Needs review</span></td></tr>
+          <tr><td>Riya Menon</td><td>Awarded tender</td><td>RFP-2291</td><td><span class="status ok">Awarded</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

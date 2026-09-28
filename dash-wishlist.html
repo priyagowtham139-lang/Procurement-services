@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Saved List — Stackly</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dash-wishlist" data-dash="user">
+<div id="loader"><div class="loader-inner"><div class="loader-ring"></div><div class="loader-pct">0%</div><div class="loader-word">Stackly</div><div class="loader-bar"><span></span></div></div></div>
+
+<div class="dash-wrap">
+  <aside class="dash-side" id="dashSide"></aside>
+
+  <main class="dash-main">
+    <div class="dash-topbar">
+      <div>
+        <h2 style="margin:0;">Saved list</h2>
+        <p style="margin:0;font-size:13.5px;">Suppliers and items you're keeping an eye on.</p>
+      </div>
+      <a href="404.html" class="btn btn-accent magnetic js-404"><span class="mag-inner"><i class="fa-solid fa-plus"></i> Add to list</span></a>
+    </div>
+
+    <div class="dash-cards">
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Saved suppliers</span><div class="ic" style="background:#E7EBFF;color:#3B5BFF;"><i class="fa-solid fa-bookmark"></i></div></div><b data-count="12">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Saved items</span><div class="ic" style="background:#F1ECFF;color:#8B5CF6;"><i class="fa-solid fa-boxes-stacked"></i></div></div><b data-count="27">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Price drops</span><div class="ic" style="background:#E6FBF7;color:#00C2A8;"><i class="fa-solid fa-arrow-trend-down"></i></div></div><b data-count="4">0</b></div>
+      <div class="dcard reveal"><div class="top"><span style="font-size:13px;color:var(--ink-soft);">Potential value</span><div class="ic" style="background:#FFEDF4;color:#FF3EA5;"><i class="fa-solid fa-coins"></i></div></div><b>$96K</b></div>
+    </div>
+
+    <div class="dash-panel reveal">
+      <div class="ph"><div><h3>Your saved list</h3><p>Four suppliers you recently bookmarked for follow-up</p></div></div>
+      <div style="overflow-x:auto;">
+      <table class="dtable">
+        <thead><tr><th>Supplier</th><th>Category</th><th>List price</th><th>Last change</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Halcyon Components</td><td>Electronics</td><td>$48.20 / unit</td><td>2 days ago</td><td><span class="status review">Price down 6%</span></td></tr>
+          <tr><td>Brightline Supply Co.</td><td>Office &amp; facility</td><td>$12.80 / unit</td><td>6 days ago</td><td><span class="status ok">Stable</span></td></tr>
+          <tr><td>Ironvale Manufacturing</td><td>Steel &amp; metals</td><td>$1,940 / tonne</td><td>11 days ago</td><td><span class="status review">Price down 3%</span></td></tr>
+          <tr><td>Kestrel Instruments</td><td>Lab equipment</td><td>$3,150 / unit</td><td>18 days ago</td><td><span class="status pending">Awaiting quote</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
