@@ -130,12 +130,13 @@ section{position:relative; overflow:hidden;}
 .loader-bar span{display:block; height:100%; width:0%; background:var(--grad-brand); transition:width .2s linear;}
 
 /* ---------- Header ---------- */
-/* The header below is position:fixed, so it sits out of flow. This mount stays in
-   flow at exactly --header-h to reserve the space the header used to occupy, so no
-   page's top padding or content position changes. */
-#site-header-mount{position:relative; z-index:500; height:var(--header-h);}
+/* The header below is position:fixed, so it sits out of flow. This mount (the
+   <div id="site-header"> the header is injected into) stays in flow at exactly
+   --header-h to reserve the space the header used to occupy, so no page's top
+   padding or content position changes. */
+#site-header{position:relative; z-index:500; height:var(--header-h);}
 /* position:fixed, not sticky. Sticky could never work here: the header's only
-   parent is the short #site-header-mount above, so it has no room to travel, and
+   parent is the short #site-header div above, so it has no room to travel, and
    html,body{overflow-x:hidden} makes <html> a scroll container, which stops sticky
    resolving against the viewport. Fixed is viewport-anchored on every breakpoint
    with no media-query overrides, so desktop and mobile behave identically. */
